@@ -4,6 +4,7 @@ import index from "@/pages/index";
 import login from "@/pages/login";
 import main from "@/pages/main";
 import sent from "@/pages/sent";
+import search from "@/components/search";
 
 Vue.use(Router);
 
@@ -27,7 +28,18 @@ export default new Router({
     {
       path: "/main",
       name: "main",
-      component: main
+      component: main,
+      children: [
+        {
+          path: "",
+          name: "",
+          redirect: "search"
+        },
+        {
+          path: "search",
+          component: search
+        }
+      ]
     },
     {
       path: "/sent",
