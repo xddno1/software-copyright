@@ -29,7 +29,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .login {
   height: 100vh;
   background: url('../assets/loginbgc.jpg');
