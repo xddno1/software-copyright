@@ -64,7 +64,7 @@ export default {
   components: {},
   data () {
     return {
-      routertitle: "检索专利"
+      routertitle: "管理院系"
     };
   },
   methods: {

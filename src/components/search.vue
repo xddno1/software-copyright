@@ -1,6 +1,6 @@
 <template>
   <div class="search">
-    <div class="top">
+    <!-- <div class="top">
       <span>检索：按</span>
       <el-select
         v-model="value"
@@ -19,17 +19,19 @@
       <span>检索&nbsp;关键字</span>
       <el-input placeholder="请输入内容" size="small" class="input2"></el-input>
       <el-button icon="el-icon-search" round size="small"></el-button>
-    </div>
+    </div> -->
     <div class="center">
       <el-table :data="tableData" style="width: 100%" border>
-        <el-table-column prop="date" label="日期" width="120">
+        <el-table-column type="index" width="50" label="序号">
         </el-table-column>
+        <!-- <el-table-column prop="date" label="日期" width="120">
+        </el-table-column> -->
         <el-table-column prop="xueyuan" label="学院"> </el-table-column>
-        <el-table-column prop="subject" label="专题"> </el-table-column>
+        <!-- <el-table-column prop="subject" label="专题"> </el-table-column>
         <el-table-column prop="name" label="申请人" width="90">
         </el-table-column>
         <el-table-column prop="title" label="标题"> </el-table-column>
-        <el-table-column prop="zhuanlinum" label="专利号"> </el-table-column>
+        <el-table-column prop="zhuanlinum" label="专利号"> </el-table-column> -->
         <el-table-column label="操作" width="120">
           <el-popconfirm
             confirm-button-text="是的"
@@ -42,9 +44,7 @@
               >删除</el-button
             >
           </el-popconfirm>
-          <el-button type="text" size="small" @click="print">
-            在线打印
-          </el-button>
+          <el-button type="text" size="small" @click="print"> 修改 </el-button>
         </el-table-column>
       </el-table>
     </div>
