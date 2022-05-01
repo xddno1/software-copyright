@@ -21,7 +21,7 @@
         </el-menu-item>
         <el-menu-item index="3">
           <i class="el-icon-document"></i>
-          <span slot="title">检索论文</span>
+          <span slot="title">检索专利</span>
         </el-menu-item>
         <el-menu-item index="4">
           <i class="el-icon-setting"></i>
@@ -38,10 +38,6 @@
         <el-menu-item index="7">
           <i class="el-icon-setting"></i>
           <span slot="title">管理专业</span>
-        </el-menu-item>
-        <el-menu-item index="8">
-          <i class="el-icon-setting"></i>
-          <span slot="title">管理学位级别</span>
         </el-menu-item>
         <el-menu-item index="9">
           <i class="el-icon-setting"></i>
@@ -68,7 +64,7 @@ export default {
   components: {},
   data () {
     return {
-      routertitle: "检索论文"
+      routertitle: "检索专利"
     };
   },
   methods: {

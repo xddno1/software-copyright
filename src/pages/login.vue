@@ -2,6 +2,7 @@
   <div class="login">
     <div class="box">
       <div class="logo"><img src="../assets/logo.png" alt="" /></div>
+      <div class="title">专利管理系统</div>
       <el-tabs stretch>
         <el-tab-pane label="学生登录"></el-tab-pane>
         <el-tab-pane label="管理员登录"></el-tab-pane>
@@ -47,12 +48,19 @@ export default {
   padding: 0 8%;
   box-sizing: border-box;
 }
+
 .logo {
   padding-top: 30px;
 }
 .logo img {
   margin: 0 auto;
   width: 88%;
+}
+.title {
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
 }
 .el-tabs__item {
   color: #cdcdcd;
